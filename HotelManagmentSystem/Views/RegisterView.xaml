@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="HotelManagmentSystem.Views.RegisterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HotelManagmentSystem.Views" 
+             xmlns:components="clr-namespace:PasswordBoxMVVM.Components;assembly=PasswordBoxMVVM"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" 
+             d:DesignWidth="800">
+    <Grid Margin="25" MaxWidth="500">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        
+        <TextBlock 
+            Grid.Row="0"
+            FontSize="32" 
+            Text="Register"/>
+
+        <Grid Grid.Row="1" Margin="0,20,0,0" Grid.RowSpan="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="Email" />
+                <TextBlock />
+                <TextBox TextWrapping="Wrap" Margin="0,-15,0,0"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Margin="0 10 0 0">
+                <TextBlock Text="Username" />
+                <TextBlock />
+                <TextBox TextWrapping="Wrap" Margin="0,-15,0,0"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Margin="0 10 0 0">
+                <TextBlock Text="Password" />
+                <components:BindablePasswordBox Loaded="BindablePasswordBox_Loaded"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Margin="0 10 0 0">
+                <TextBlock Text="Confirm Password" />
+                <components:BindablePasswordBox/>
+            </StackPanel>
+
+            <Button Grid.Row="4" 
+                    Margin="0 20 0 0"
+                    Content="Submit" />
+
+            <Button Grid.Row="5" 
+                    Margin="0 10 0 0"
+                    Content="Already have an account Login" />
+        </Grid>
+    </Grid>
+</UserControl>
