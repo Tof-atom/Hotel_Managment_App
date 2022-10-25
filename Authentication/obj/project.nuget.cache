@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KgTxoqb28WgU2Mh0M/GrQKexp8sy6qMS+O/WpmIaDfpgrk+3q/IL09BeYb5GAkxeOt9kjpUIv93d6Xkd5G9l1A==",
+  "dgSpecHash": "CLDqPyZms1ynYVdOdT6sco70VsdixvX7Hsn6nmIooucoY9WGbLKhgSWS7VB4QnLshH5DKvqCOPQPD2CymdrzfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ogutk\\Documents\\Study at Vanier\\Fall\\App dev\\Project\\delivary_1\\Authentication\\Authentication\\Authentication.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,7 @@
     "C:\\Users\\ogutk\\.nuget\\packages\\mvvmessentials.wpf\\1.0.3\\mvvmessentials.wpf.1.0.3.nupkg.sha512",
     "C:\\Users\\ogutk\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\ogutk\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\ogutk\\.nuget\\packages\\passwordboxmvvm\\1.0.5\\passwordboxmvvm.1.0.5.nupkg.sha512",
     "C:\\Users\\ogutk\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\ogutk\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\ogutk\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:Authentication"
              >
     <Application.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="2" />
+        </Style>
+
+        <Style TargetType="PasswordBox">
+            <Setter Property="Padding" Value="2" />
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10 5"/>
+        </Style>
          
     </Application.Resources>
 </Application>
