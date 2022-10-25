@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Authentication.Commands
 {
@@ -27,15 +28,22 @@ namespace Authentication.Commands
 
             if (password != confirmPassword)
             {
+                MessageBox.Show("Password and confirm password must match.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
                 return;
             }
 
             try
             {
                 await _firebaseAuthProvider.CreateUserWithEmailAndPasswordAsync(_registerViewModel.Email, password, _registerViewModel.Username);
+                
+                MessageBox.Show("Successfully registeres!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                //navigate to login page
             }
             catch (Exception)
             {
+                MessageBox.Show("Registration failed. Please try again later.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 throw;
             }
         }

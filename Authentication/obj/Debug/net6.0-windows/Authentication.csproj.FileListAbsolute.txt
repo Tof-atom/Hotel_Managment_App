@@ -49,9 +49,9 @@ C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authent
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\obj\Debug\net6.0-windows\ref\Authentication.dll
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\bin\Debug\net6.0-windows\Firebase.Auth.dll
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
-C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\bin\Debug\net6.0-windows\appsetting.json
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\bin\Debug\net6.0-windows\PasswordBoxMVVM.dll
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\obj\Debug\net6.0-windows\Views\RegisterView.g.cs
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\obj\Debug\net6.0-windows\Views\RegisterView.baml
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\obj\Debug\net6.0-windows\App.baml
+C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\bin\Debug\net6.0-windows\appsettings.json
