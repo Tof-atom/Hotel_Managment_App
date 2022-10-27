@@ -76,9 +76,10 @@ namespace Authentication.ViewModels
 
         public ICommand NaviagateLoginCommand { get; }
 
-        public RegisterViewModel(FirebaseAuthProvider firebaseAuthProvider)
+        public RegisterViewModel(FirebaseAuthProvider firebaseAuthProvider, INavigationService loginNavigationService)
         {
-            SubmitCommand = new RegisterCommand(this, firebaseAuthProvider);
+            SubmitCommand = new RegisterCommand(this, firebaseAuthProvider, loginNavigationService);
+            NaviagateLoginCommand = new NavigateCommand(loginNavigationService);
         }
     }
 }

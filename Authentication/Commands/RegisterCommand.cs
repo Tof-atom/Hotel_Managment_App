@@ -1,6 +1,7 @@
 ﻿using Authentication.ViewModels;
 using Firebase.Auth;
 using MVVMEssentials.Commands;
+using MVVMEssentials.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,15 +11,17 @@ using System.Windows;
 
 namespace Authentication.Commands
 {
-    internal class RegisterCommand : AsyncCommandBase
+    public class RegisterCommand : AsyncCommandBase
     {
         private readonly RegisterViewModel _registerViewModel;
         private readonly FirebaseAuthProvider _firebaseAuthProvider;
+        private readonly INavigationService _loginNavigationServicve;
 
-        public RegisterCommand(RegisterViewModel registerViewModel, FirebaseAuthProvider firebaseAuthProvider)
+        public RegisterCommand(RegisterViewModel registerViewModel, FirebaseAuthProvider firebaseAuthProvider, INavigationService loginNavigationServicve)
         {
             _registerViewModel = registerViewModel;
             _firebaseAuthProvider = firebaseAuthProvider;
+            _loginNavigationServicve = loginNavigationServicve;
         }
 
         protected override async Task ExecuteAsync(object parameter)
@@ -40,6 +43,7 @@ namespace Authentication.Commands
                 MessageBox.Show("Successfully registeres!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 //navigate to login page
+                _loginNavigationServicve.Navigate();
             }
             catch (Exception)
             {

@@ -55,3 +55,5 @@ C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authent
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\obj\Debug\net6.0-windows\Views\RegisterView.baml
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\obj\Debug\net6.0-windows\App.baml
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\bin\Debug\net6.0-windows\appsettings.json
+C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\obj\Debug\net6.0-windows\Views\LoginView.g.cs
+C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\obj\Debug\net6.0-windows\Views\LoginView.baml
