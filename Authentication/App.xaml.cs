@@ -1,4 +1,5 @@
-﻿using Authentication.ViewModels;
+﻿using Authentication.Store;
+using Authentication.ViewModels;
 using Firebase.Auth;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,7 +38,10 @@ namespace Authentication
 
                     service.AddSingleton<NavigationStore>();
                     service.AddSingleton<ModalNavigationStore>();
+                    service.AddSingleton<AuthenticationStore>();
 
+
+                    //Registration service for Register form
                     service.AddSingleton<NavigationService<RegisterViewModel>>(
                         (services) => new NavigationService<RegisterViewModel>(
                             services.GetRequiredService<NavigationStore>(),
@@ -45,13 +49,20 @@ namespace Authentication
                                 services.GetRequiredService<FirebaseAuthProvider>(),
                                 services.GetRequiredService<NavigationService<LoginViewModel>>()
                                 )));
-
+                    //Registration service for Log in form
                     service.AddSingleton<NavigationService<LoginViewModel>>(
                         (services) => new NavigationService<LoginViewModel>(
                             services.GetRequiredService<NavigationStore>(),
                             () => new LoginViewModel(
-                                services.GetRequiredService<FirebaseAuthProvider>(),
-                                services.GetRequiredService<NavigationService<RegisterViewModel>>())));
+                                services.GetRequiredService<AuthenticationStore>(),
+                                services.GetRequiredService<NavigationService<RegisterViewModel>>(),
+                                services.GetRequiredService<NavigationService<HomeViewModel>>())));
+
+                    //Registration service for Home page
+                    service.AddSingleton<NavigationService<HomeViewModel>>(
+                        (services) => new NavigationService<HomeViewModel>(
+                            services.GetRequiredService<NavigationStore>(),
+                            () => new HomeViewModel(services.GetRequiredService<AuthenticationStore>())));
 
                     service.AddSingleton<MainViewModel>();
 

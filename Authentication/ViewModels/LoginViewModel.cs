@@ -1,4 +1,5 @@
 ﻿using Authentication.Commands;
+using Authentication.Store;
 using Firebase.Auth;
 using MVVMEssentials.Commands;
 using MVVMEssentials.Services;
@@ -46,9 +47,12 @@ namespace Authentication.ViewModels
 
         public ICommand NavigateRegisterCommand { get; }
 
-        public LoginViewModel(FirebaseAuthProvider firebaseAuthProvider, INavigationService registerNavigationService)
+        public LoginViewModel(
+            AuthenticationStore authenticationStore, 
+            INavigationService registerNavigationService, 
+            INavigationService homeNavigationService)
         {
-            SubmitCommand = new LoginCommand(this, firebaseAuthProvider);
+            SubmitCommand = new LoginCommand(this, authenticationStore, homeNavigationService);
             NavigateRegisterCommand = new NavigateCommand(registerNavigationService);
             
         }

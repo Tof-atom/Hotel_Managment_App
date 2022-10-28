@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Authentication\App.xaml
-3-1598562575
+41830544561
 
-9918067809
+121821576656
 223569923751
-MainWindow.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;
+MainWindow.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;
 
 False
 
