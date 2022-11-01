@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!--Colors-->
+    <Color x:Key="HeaderColor">#0275dd</Color>
+    <Color x:Key="NavColor">#7fadcd</Color>
+    
+    <!--Brushes-->
+    <SolidColorBrush x:Key="BrushHeader" Color="{StaticResource HeaderColor}"/>
+    <SolidColorBrush x:Key="BrushNav" Color="{StaticResource NavColor}"/>
+</ResourceDictionary>

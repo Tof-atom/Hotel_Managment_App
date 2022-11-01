@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Hotel_Managment_Studio.Controls.NavigationBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hotel_Managment_Studio.Controls"
+             xmlns:nav="clr-namespace:Hotel_Managment_Studio.State.Navigators"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Hotel Managment Studio" Background="{StaticResource BrushHeader}"/>
+        <Grid Grid.Row="1" Background="{StaticResource BrushNav}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <RadioButton Grid.Column="0" Content="Account" Command="{Binding UpdateCurrentViewModelCommand}" CommandParameter="{x:Static nav:ViewType.Account}" />
+            <RadioButton Grid.Column="1" Content="Search room" Command="{Binding UpdateCurrentViewModelCommand}" CommandParameter="{x:Static nav:ViewType.Search_room}"/>
+            <RadioButton Grid.Column="2" Content="Registration" Command="{Binding UpdateCurrentViewModelCommand}" CommandParameter="{x:Static nav:ViewType.Registration}"/>
+            <RadioButton Grid.Column="3" Content="History" Command="{Binding UpdateCurrentViewModelCommand}" CommandParameter="{x:Static nav:ViewType.History}"/>
+            <RadioButton Grid.Column="4" Content="Details"/>
+
+        </Grid>
+
+    </Grid>
+</UserControl>

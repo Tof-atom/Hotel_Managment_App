@@ -1,0 +1,35 @@
+﻿<Application x:Class="Hotel_Managment_Studio.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Hotel_Managment_Studio"
+             xmlns:viewmodels="clr-namespace:Hotel_Managment_Studio.ViewModels"
+             xmlns:views="clr-namespace:Hotel_Managment_Studio.Views"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Common.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewmodels:AccountViewModel}">
+                <views:AccountView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:SearchRoomViewModel}">
+                <views:SearchRoomView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:RegistrationViewModel}">
+                <views:RegistrationView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:HistoryViewModel}">
+                <views:HistoryView/>
+            </DataTemplate>
+            
+            
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
