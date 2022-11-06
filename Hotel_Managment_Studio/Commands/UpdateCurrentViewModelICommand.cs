@@ -1,4 +1,5 @@
-﻿using Hotel_Managment_Studio.State.Navigators;
+﻿using Hotel_Managment_Studio.Service;
+using Hotel_Managment_Studio.State.Navigators;
 using Hotel_Managment_Studio.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -36,10 +37,10 @@ namespace Hotel_Managment_Studio.Commands
                         _navigator.CurrentViewModel = new AccountViewModel();
                         break;
                     case ViewType.Search_room:
-                        _navigator.CurrentViewModel = new SearchRoomViewModel();
+                        _navigator.CurrentViewModel = new SearchRoomViewModel(MajorIndexViewModel.LoadMajorIndexViewModel(MajorIndexService()));
                         break;
                     case ViewType.Registration:
-                        _navigator.CurrentViewModel = new RegistrationViewModel();
+                        _navigator.CurrentViewModel = new RegistrationViewModel(); 
                         break;
                     case ViewType.History:
                         _navigator.CurrentViewModel = new HistoryViewModel();
@@ -51,6 +52,11 @@ namespace Hotel_Managment_Studio.Commands
                         break;
                 }
             }
+        }
+
+        private IMajorIndexService MajorIndexService()
+        {
+            throw new NotImplementedException();
         }
     }
 }

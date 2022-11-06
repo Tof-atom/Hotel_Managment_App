@@ -13,8 +13,11 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Text="Hotel Managment Studio" Background="{StaticResource BrushHeader}"/>
-        <Grid Grid.Row="1" Background="{StaticResource BrushNav}">
+        <TextBlock Grid.Row="0" Padding="10" FontSize="28" Foreground="White" Text="Hotel Managment Studio" Background="{StaticResource BrushHeader}"/>
+        <Grid Grid.Row="1"  Background="{StaticResource BrushNav}">
+            <Grid.Resources>
+                <Style TargetType="RadioButton" BasedOn="{StaticResource NavButton}"/>
+            </Grid.Resources>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>

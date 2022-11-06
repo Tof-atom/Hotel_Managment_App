@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\ogutk\Documents\Study at Vanier\Fall\App dev\Project\delivary_1\Authentication\Hotel_Managment_Studio\App.xaml
-71349325610
+8-342138734
 
-18633345529
+21516056629
 224-1242148694
-Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Views\AccountView.xaml;Views\HistoryView.xaml;Views\RegistrationView.xaml;Views\SearchRoomView.xaml;
+Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\NavigationBar.xaml;Views\AccountView.xaml;Views\HistoryView.xaml;Views\RegistrationView.xaml;Views\SearchRoomView.xaml;
 
 False
 

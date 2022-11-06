@@ -1,4 +1,5 @@
-﻿using Hotel_Managment_Studio.ViewModels;
+﻿using Hotel_Managment_Studio.Service;
+using Hotel_Managment_Studio.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -16,6 +17,7 @@ namespace Hotel_Managment_Studio
     {
         protected override void OnStartup(StartupEventArgs e)
         {
+
             
             Window window = new MainWindow();
             window.DataContext = new MainViewModel();
