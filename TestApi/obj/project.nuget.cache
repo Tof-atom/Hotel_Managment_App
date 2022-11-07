@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VSdojvBz+8dbOOmxq36gG8HLV07msPL+fBbYwEcmxvbV9hctFlMiajqc1uR8p+RgFScBi9dt8XSZglLtHGsIfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ogutk\\Documents\\Study at Vanier\\Fall\\App dev\\Project\\delivary_1\\Authentication\\TestApi\\TestApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ogutk\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
