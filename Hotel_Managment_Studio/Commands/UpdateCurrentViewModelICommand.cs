@@ -37,10 +37,10 @@ namespace Hotel_Managment_Studio.Commands
                         _navigator.CurrentViewModel = new AccountViewModel();
                         break;
                     case ViewType.Search_room:
-                        _navigator.CurrentViewModel = new SearchRoomViewModel(MajorIndexListingViewModel.LoadMajorIndexViewModel(new MajorIndexService()));
+                        _navigator.CurrentViewModel = new SearchRoomViewModel();
                         break;
                     case ViewType.Registration:
-                        _navigator.CurrentViewModel = new RegistrationViewModel(); 
+                        _navigator.CurrentViewModel = new RegistrationViewModel();
                         break;
                     case ViewType.History:
                         _navigator.CurrentViewModel = new HistoryViewModel();
@@ -54,6 +54,6 @@ namespace Hotel_Managment_Studio.Commands
             }
         }
 
-      
+        
     }
 }

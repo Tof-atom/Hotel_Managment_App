@@ -53,7 +53,7 @@ namespace Hotel_Managment_Studio.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Hotel_Managment_Studio;component/controls/majorindexcard.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Hotel_Managment_Studio;V1.0.0.0;component/controls/majorindexcard.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controls\MajorIndexCard.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

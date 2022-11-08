@@ -7,10 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Controls\MajorIndexCard.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Controls\MajorIndexListing.xaml.cs">
+    <Compile Update="Controls\HotelListing.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Controls\NavigationBar.xaml.cs">
@@ -22,6 +19,9 @@
     <Compile Update="Views\HistoryView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\HotelListingView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\RegistrationView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -30,10 +30,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Controls\MajorIndexCard.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Controls\MajorIndexListing.xaml">
+    <Page Update="Controls\HotelListing.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Controls\NavigationBar.xaml">
@@ -52,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\HistoryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HotelListingView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\RegistrationView.xaml">

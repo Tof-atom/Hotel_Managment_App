@@ -8,11 +8,5 @@ namespace Hotel_Managment_Studio.ViewModels
 {
     public class SearchRoomViewModel : ViewModelBase
     {
-        public MajorIndexListingViewModel MajorIndexListingViewModel { get; set; }
-
-        public SearchRoomViewModel(MajorIndexListingViewModel majorIndexListingViewModel)
-        {
-            MajorIndexListingViewModel = majorIndexListingViewModel;
-        }
     }
 }

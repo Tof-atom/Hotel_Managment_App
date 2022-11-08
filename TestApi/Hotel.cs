@@ -19,9 +19,16 @@ namespace TestApi
     {
         public string streetAddress { get; set; }
         public string locality { get; set; }
-        public string postalCode { get; set; }
         public string region { get; set; }
-        public string countryName { get; set; }
-        
+        public string postalCode { get; set; }
+
+        public HotelAddress(string streetAddress, string locality, string region, string postalCode)
+        {
+            this.streetAddress = streetAddress;
+            this.locality = locality;
+            this.region = region;
+            this.postalCode = postalCode;
+        }
+
     }
 }
